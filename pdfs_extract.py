@@ -3,7 +3,7 @@ import pandas as pd
 import refextract
 
 # Set up pdftotext path
-pdftotext_path = "Z:\\Research\\Thesis\\Paper 3 review\\Ref\\preincluded\\pdf\\poppler-23.11.0\\Library\\bin\\pdftotext.exe"
+pdftotext_path = "\\poppler-23.11.0\\Library\\bin\\pdftotext.exe" # your location to the poppler library folder
 os.environ['CFG_PATH_PDFTOTEXT'] = pdftotext_path
 os.environ["PATH"] += os.pathsep + pdftotext_path
 
@@ -46,6 +46,6 @@ def extract_references_from_folder(folder_path):
 
     print(f"References extracted and saved to {output_file}")
 
-# Example usage
-folder_path = 'Z:\\Research\\Thesis\\Paper 3 review\\Ref\\preincluded\\pdf\\citationtracking\\'  # Replace with your folder path
+# Output location
+folder_path = '\\citationtracking\\'  # Replace with your folder path
 extract_references_from_folder(folder_path)
